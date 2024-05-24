@@ -17,10 +17,10 @@ public class GameManager : MonoBehaviour
 
     public void EnemyDied()
     {
-        worms.RemoveAll(w => !w); // Удалить нулевые ссылки на врагов
+        worms.RemoveAll(w => !w);
         if (worms.Count == 0)
         {
-            // Все враги уничтожены
+            // Г‚Г±ГҐ ГўГ°Г ГЈГЁ ГіГ­ГЁГ·ГІГ®Г¦ГҐГ­Г»
             button.interactable = true;
             image.gameObject.SetActive(true);
         }
