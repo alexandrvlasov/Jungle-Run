@@ -18,13 +18,13 @@ public class Worm : Entity
         {
             Hero.Instance.GetDamage();
             lives--;
-            Debug.Log("у змеи " + lives);
+            Debug.Log("Сѓ Р·РјРµРё " + lives);
         }
 
         if (lives < 1)
         {
             Die();
-            levelManager.EnemyDied(); // Сообщить LevelManager, что враг умер
+            levelManager.EnemyDied();
         }
     }
 }
