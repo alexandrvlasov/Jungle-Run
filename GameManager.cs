@@ -20,7 +20,6 @@ public class GameManager : MonoBehaviour
         worms.RemoveAll(w => !w);
         if (worms.Count == 0)
         {
-            // Âñå âðàãè óíè÷òîæåíû
             button.interactable = true;
             image.gameObject.SetActive(true);
         }
